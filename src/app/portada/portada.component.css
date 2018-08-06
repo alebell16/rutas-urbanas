@@ -1,0 +1,9 @@
+.container{
+    background-image: url(/assets/fondo2.jpg);
+    height: calc(100vh - 56px);
+    max-width: 100vw;
+}
+
+#inputs .row {
+    justify-content: center;
+}
