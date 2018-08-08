@@ -1,10 +1,10 @@
-body {
+/* body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0px;
   font-size: 17px;
-  color: #6d767a;
+  color: rgb(5, 88, 124);
   font-weight: 400;
   line-height: 34px;
 }
@@ -204,4 +204,116 @@ hr {
   border-top: 1px solid #152e3d;
   color: #888d90;
   line-height: 1;
+} */
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+.footer {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: rgba(1, 18, 44, 0.555);
+	padding: 25px 0px;
+}
+.social-icons {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.social-icons ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+} 
+.social-icons ul li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 15px;
+	border-radius: 100%;
+	background: gray;
+	letter-spacing: 3px;
+}
+.social-icons ul li a {
+	color: #272727;
+	font-size: 25px;
+	display: block;
+}
+
+.social-icons ul li a i{
+	line-height: 50px;
+}
+
+.social-icons ul li:hover {
+	background:#fff;
+
+}
+
+
+.other-menu {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+
+}
+
+ .other-menu ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	
+} 
+
+.other-menu ul li {
+	display:inline-block;
+	margin: 0px 10px;
+}
+
+.other-menu ul li a {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.other-menu ul li a:hover {
+	color: gray;
+}
+.bottom {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: gray;
+	padding: 10px;
+}
+
+.bottom p {
+	font-family: arial;
+	font-size: 16px;
+	text-align: center;
+	text-overflow: ellipsis;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+.bottom p a {
+	color: #fff;
+}
+
+.bottom p a:hover {
+	color: #272727;
 }
