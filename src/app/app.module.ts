@@ -8,6 +8,8 @@ import { PieComponent } from './pie/pie.component';
 import { MuestraComponent } from './muestra/muestra.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
+// import { PruebaComponent } from './prueba/prueba.component';
+import { HistorialComponent } from './historial/historial.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LoginComponent } from './login/login.component';
     PortadaComponent,
     PieComponent,
     MuestraComponent,
-    LoginComponent
+    LoginComponent,
+    // PruebaComponent,
+    HistorialComponent
   ],
   imports: [
     BrowserModule,
