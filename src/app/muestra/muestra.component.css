@@ -1,4 +1,16 @@
 .reloj{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.list-group{
+    width: 40%;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.mapa{
+    margin: 30px;
+    height: 100%;
 }
