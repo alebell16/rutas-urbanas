@@ -1,0 +1,16 @@
+img {
+    margin: auto;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    color: white;
+}
+
+.navbar {
+    background: linear-gradient(-90deg, #F6AF58,#974157);
+}
+
+.nav-item active .nav-link {
+    color: white;
+}

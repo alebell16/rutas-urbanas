@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MuestraComponent } from './muestra/muestra.component';
 import { PortadaComponent } from './portada/portada.component';
 import { LoginComponent } from './login/login.component';
+import { HistorialComponent } from './historial/historial.component';
 // import { PruebaComponent } from './prueba/prueba.component';
 
 
@@ -22,10 +23,10 @@ const routes: Routes = [
     path: 'login', // se accesa /otra-ruta
     component: LoginComponent
   },
-  // {
-  //   path: 'prueba', // se accesa /otra-ruta
-  //   component: PruebaComponent
-  // },
+  {
+    path: 'historial', // se accesa /otra-ruta
+    component: HistorialComponent
+  },
 ]
 
 @NgModule({
