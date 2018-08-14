@@ -7,6 +7,12 @@ import { Location } from '@angular/common';
 })
 export class MuestraComponent implements OnInit {
 
+  metro: boolean = false
+  camion: boolean = false
+  metrobus: boolean = false
+  combi: boolean = false
+  taxi: boolean = false
+
   constructor(
     private location: Location
   ) { }
@@ -17,6 +23,31 @@ export class MuestraComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+  
+  cambiaSeccion (section: string) {
+  console.log(section)
+  this.camion = true
+}
+  // cambiaSeccion (section: string) {
+  // console.log(section)
+  // this.metro = true
+
+//   switch (section) {
+//     case 0:
+//         day = "metro";
+//         break;
+//     case 1:
+//         day = "camion";
+//         break;
+//     case 2:
+//         day = "Tuesday";
+//         break;
+//     case 3:
+//         day = "Wednesday";
+//         break;
+//     case 4:
+        
+// }
 }
 
 function cambia_manecilla() {
@@ -32,9 +63,9 @@ function cambia_manecilla() {
   var rotateS =  "rotate("+segundos * 6+"deg)";
   var rotateM =  "rotate("+minutos * 6+"deg)";
   var rotateH =  "rotate("+((horas * 30) + (minutos / 2))+"deg)";
-  segundero.style.webkitTransform = rotateS;
-  minutero.style.webkitTransform = rotateM;  
-  horero.style.webkitTransform = rotateH;
+  if(segundero) segundero.style.webkitTransform = rotateS;
+  if(minutero) minutero.style.webkitTransform = rotateM;  
+  if(horero) horero.style.webkitTransform = rotateH;
   // segundero.style.MozTransform = rotateS;
   // minutero.style.MozTransform = rotateM;  
   // horero.style.MozTransform = rotateH;

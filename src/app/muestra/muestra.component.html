@@ -18,11 +18,12 @@
       <button type="button" class="list-group-item list-group-item-action list-group-item-warning">
         Tipo de transporte
       </button>
-      <button type="button" class="list-group-item list-group-item-action">METRO</button>
-      <button type="button" class="list-group-item list-group-item-action">CAMION</button>
-      <button type="button" class="list-group-item list-group-item-action">METROBUS</button>
-      <button type="button" class="list-group-item list-group-item-action">COMBI</button>
-      <button type="button" class="list-group-item list-group-item-action">TAXI</button>
+      
+      <button (click)="cambiaSeccion('metro')" type="button" class="list-group-item list-group-item-action">METRO</button>
+      <button (click)="cambiaSeccion('camion')" type="button" class="list-group-item list-group-item-action">CAMION</button>
+      <button (click)="cambiaSeccion('metrobus')" type="button" class="list-group-item list-group-item-action">METROBUS</button>
+      <button (click)="cambiaSeccion('combi')" type="button" class="list-group-item list-group-item-action">COMBI</button>
+      <button (click)="cambiaSeccion('taxi')" type="button" class="list-group-item list-group-item-action">TAXI</button>
     </div>
   </div>
   <div class="col-sm-6">
@@ -31,27 +32,27 @@
         <h5 class="card-title">INDICACIONES</h5>
         <p class="card-text">Tu ubicación</p>
           <ul>
-            <li>
+            <li >
               Dirígete al norte por Calle Isabel la Catolica hacia Calle de Venustiano Carranza.
               55 metros
             </li>
-            <li>
+            <li *ngIf="metro">
               Gira a la derecha en la 1ª intersección hacia Calle de Venustiano Carranza.
               220 metros
             </li>
-            <li>
+            <li *ngIf="camion">
               Gira a la derecha con dirección a 5 de Febrero
               1.0 km
             </li>
-            <li>
+            <li *ngIf="metrobus">
               Usa los 2 carriles derechos para girar a la derecha hacia Av. 20 de Noviembre.
               600 metros
             </li>
-            <li>
+            <li *ngIf="combi">
               Gira a la izquierda con dirección a Calle Bolivar
               1.4 km
             </li>
-            <li>
+            <li *ngIf="taxi">
               Gira a la derecha con dirección a José Peón Contreras/Eje 3 Sur
             </li>
           </ul>
