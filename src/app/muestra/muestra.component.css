@@ -5,52 +5,72 @@
 } */
 
 #reloj {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 20px auto 40px auto;
-    /* margin: 30px; */
-    background: url(https://4.bp.blogspot.com/-JWBIk7o77hQ/T43_W-LtTKI/AAAAAAAACh4/n8wev2W3XJQ/s200/reloj%2Bsin%2Bmanecillas.GIF) no-repeat;
-  }
-  
-  #segundos, #minutos, #horas {
-     background-image: url(http://riotdesign.eu/assets/img/orologio/analogseconds.png);
-    background-position: center center;
-    height:200px;
-    width: 30px;
-    position: absolute;
-    top: 0;
-    left: 87px;
-  }
-  
-  #segundos {
-    background-size: 320px;
-    -webkit-filter: grayscale(1);
-  }
-  
-  #minutos {
-    background-size: 280px;
-  }
-  
-  #horas {
-    background-size: 200px;
-    background-repeat: no-repeat;
-  }
-
-
-
-.list-group{
-    width: 40%;
-    padding-bottom: 20px;
-    padding-left: 10px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto 40px auto;
+  /* margin: 30px; */
+  background: url(https://4.bp.blogspot.com/-JWBIk7o77hQ/T43_W-LtTKI/AAAAAAAACh4/n8wev2W3XJQ/s200/reloj%2Bsin%2Bmanecillas.GIF) no-repeat;
 }
 
-.mapa{
-    margin: 30px;
-    height: 100%;
+#segundos,
+#minutos,
+#horas {
+  background-image: url(http://riotdesign.eu/assets/img/orologio/analogseconds.png);
+  background-position: center center;
+  height: 200px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  left: 87px;
 }
-.button{
-    margin: 30px;
-    height: 100%;
 
+#segundos {
+  background-size: 320px;
+  -webkit-filter: grayscale(1);
+}
+
+#minutos {
+  background-size: 280px;
+}
+
+#horas {
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+.list-group {
+  width: 40%;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .list-group {
+    display: block; 
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .mapa {
+    margin: 5px;
+    height: 100%;
+  }
+  
+  .row {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+}
+
+.mapa {
+  margin: 30px;
+  height: 100%;
+}
+
+.button {
+  margin: 30px;
+  height: 100%;
 }
