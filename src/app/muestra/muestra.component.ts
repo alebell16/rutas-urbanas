@@ -26,28 +26,23 @@ export class MuestraComponent implements OnInit {
   
   cambiaSeccion (section: string) {
   console.log(section)
-  this.camion = true
-}
-  // cambiaSeccion (section: string) {
-  // console.log(section)
-  // this.metro = true
+  this.metro = false
+  this.camion = false
+  this.metrobus = false
+  this.combi = false
+  this.taxi = false
 
-//   switch (section) {
-//     case 0:
-//         day = "metro";
-//         break;
-//     case 1:
-//         day = "camion";
-//         break;
-//     case 2:
-//         day = "Tuesday";
-//         break;
-//     case 3:
-//         day = "Wednesday";
-//         break;
-//     case 4:
-        
-// }
+  if( section === 'metro')
+        this.metro = true
+  if( section === 'camion')
+        this.camion = true
+  if( section === 'metrobus')
+        this.metrobus = true
+  if( section === 'combi')
+        this.combi = true
+  if( section === 'taxi')
+        this.taxi = true
+  }
 }
 
 function cambia_manecilla() {
